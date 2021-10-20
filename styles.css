@@ -1,0 +1,29 @@
+/* styles.css */
+html, body {
+    margin: 0; padding:0; width: 100vw; height: 100vh;
+    background-color: transparent;
+    user-select: none;
+}
+/* Add styles here to customize the appearance of your app */
+body {
+    -webkit-app-region: drag;
+    --webkit-user-select: none;
+} 
+
+#circle {
+    width: 100vw; height: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 50%;
+
+}
+
+#camera {
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: transparent;
+  
+}

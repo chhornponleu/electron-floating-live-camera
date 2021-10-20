@@ -1,0 +1,50 @@
+{
+  "name": "floating-live-camera",
+  "version": "1.0.0",
+  "description": "Floating Live Camera",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "rimraf dist && electron-builder --dir",
+    "dist": "rimraf dist && electron-builder",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Floating",
+    "Live",
+    "Camera",
+    "Tuturial",
+    "Screen",
+    "Record",
+    "Video"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^15.2.0",
+    "electron-builder": "^22.13.1",
+    "rimraf": "^3.0.2"
+  },
+  "build": {
+    "productName": "Floating Cam",
+    "appId": "com.ponleu",
+    "mac": {
+      "category": "com.ponleu.floatingcam",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "extendInfo": {
+        "LSMinimumSystemVersion": "10.12.6",
+        "NSCameraUsageDescription": "Please give access to your webcam",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "dmg": {
+      "sign": false
+    }
+  }
+}

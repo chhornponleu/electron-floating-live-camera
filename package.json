@@ -23,7 +23,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^15.2.0",
-    "electron-builder": "^22.13.1",
+    "electron-builder": "^22.14.13",
     "rimraf": "^3.0.2"
   },
   "build": {
